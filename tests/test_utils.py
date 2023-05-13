@@ -670,6 +670,7 @@ def test_parse_header_links(value, expected):
         ("example.com/path", "http://example.com/path"),
         ("//example.com/path", "http://example.com/path"),
         ("example.com:80", "http://example.com:80"),
+        ("hostname:8080", "http://hostname:8080"),
         (
             "http://user:pass@example.com/path?query",
             "http://user:pass@example.com/path?query",
